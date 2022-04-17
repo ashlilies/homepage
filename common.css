@@ -9,3 +9,17 @@ body {
 nav {
   opacity: 0.6;
 }
+
+#content > ul {
+  opacity: 0.6;
+}
+
+#content > ul li:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#content > ul li:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

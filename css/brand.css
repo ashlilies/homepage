@@ -1,0 +1,74 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-blur, .btn-blur, .dropdown-menu {
+  background-color: #ffffff33;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px #bbbbbbbb !important;
+}
+
+.rounded-reset {
+  border-radius: 0 !important;
+}
+
+.btn-blur:hover {
+  box-shadow: 0 0 5px 1px #bbbb !important;
+}
+
+.btn-blur:active {
+  box-shadow: 0 0 5px 1px #cccc !important;
+}
+
+/* For modals - the content background, not just the dismissible background */
+.bg-blur-light {
+  background-color: #ffffff66;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px #bbbbbbbb !important;
+}
+
+.modal-backdrop {
+  opacity: 0 !important;
+}
+
+.form-control, .form-control:focus, .table {
+  background-color: #ffffff33;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px 1px #bbbbbbbb !important;
+  border-radius: 15px;
+}
+
+.btn-blur:hover {
+  
+}
+
+*:focus {
+  outline-color: #bbbbbbbb;
+}
+
+.dropdown-item:active {
+  color: black;
+  outline-color: #fffb;
+  background-color: #fffb;
+}
+
+th, td {
+  padding: 0.8rem !important;
+}
+
+/* 
+ * To fix content overlapping navbar (doesn't affect modals) 
+ * Why isn't this included by default?
+ */
+nav {
+  z-index: 1000;
+  margin-bottom: 1rem !important;
+  margin-top: .25rem !important;
+  margin-right: .5rem !important;
+  margin-left: .5rem !important;
+}
